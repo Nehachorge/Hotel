@@ -1,5 +1,5 @@
 /**
- * TAMHINI VALLEY RETREAT - MAIN JAVASCRIPT
+ * चोरगे निसर्ग निवास - MAIN JAVASCRIPT
  * Features: Mobile drawer, sticky header, scroll reveal, WhatsApp booking generator,
  *           gallery filtering, lightbox modal, back-to-top, image fallback.
  */
@@ -11,7 +11,7 @@ const CONFIG = {
   phone: "9022142586", // Change property phone number here
   countryCode: "91",
   email: "YOUR_EMAIL", // Change property email here
-  propertyName: "Tamhini Valley Retreat",
+  propertyName: "चोरगे निसर्ग निवास",
   locationText: "Nive, Tamhini, Mulshi, Pune, Maharashtra, India",
   googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Nive%2C%20Tamhini%2C%20Mulshi%2C%20Pune%2C%20Maharashtra"
 };
@@ -173,7 +173,7 @@ function initBookingForm() {
 
     // Build the formatted inquiry message requested by the user:
     const messageLines = [
-      `*Tamhini Valley Retreat Booking Enquiry*`,
+      `*चोरगे निसर्ग निवास Booking Enquiry*`,
       ``,
       `*Name:* ${fullName}`,
       `*Mobile:* ${mobile}`,
@@ -274,7 +274,7 @@ function initGallery() {
 
     if (imgEl) {
       lightboxImg.src = imgEl.src;
-      lightboxImg.alt = imgEl.alt || "Tamhini Valley Retreat gallery view";
+      lightboxImg.alt = imgEl.alt || "चोरगे निसर्ग निवास gallery view";
     }
 
     if (lightboxCaption && captionEl) {
@@ -370,7 +370,7 @@ function initImageFallbacks() {
       // If external image fails, provide gentle styling and prevent broken image layout
       img.style.opacity = "0.7";
       img.style.backgroundColor = "#1b3b2b";
-      img.alt = img.alt || "Tamhini Valley Retreat";
+      img.alt = img.alt || "चोरगे निसर्ग निवास";
     });
   });
 }

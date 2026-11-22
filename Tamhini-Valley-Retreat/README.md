@@ -1,4 +1,4 @@
-# Tamhini Valley Retreat — Official Website
+# चोरगे निसर्ग निवास — Official Website
 
 > **Tagline:** *Your Gateway to Tamhini*  
 > **Location:** Nive, Tamhini, Mulshi, Pune, Maharashtra, India  
@@ -110,7 +110,7 @@ To replace an Unsplash image with your real property photo:
    <img src="https://images.unsplash.com/..." alt="...">
 
    <!-- After: -->
-   <img src="images/rooms/deluxe-room.jpg" alt="Deluxe Room at Tamhini Valley Retreat">
+   <img src="images/rooms/deluxe-room.jpg" alt="Deluxe Room at चोरगे निसर्ग निवास">
    ```
 4. Save the file and refresh your browser.
 
@@ -207,7 +207,7 @@ In `index.html`, under the `#reviews` section, replace the placeholder cards:
 In `index.html`, `rooms.html`, `restaurant.html`, `experiences.html`, `explore.html`, `gallery.html`, and `contact.html`:
 Find the social icon links in the footer:
 ```html
-<a href="#" class="social-link" aria-label="Follow Tamhini Valley Retreat on Instagram">
+<a href="#" class="social-link" aria-label="Follow चोरगे निसर्ग निवास on Instagram">
 ```
 Replace `#` with your live page URL, for example:
 ```html
@@ -222,7 +222,7 @@ Replace `#` with your live page URL, for example:
    ```bash
    git init
    git add .
-   git commit -m "Launch Tamhini Valley Retreat website"
+   git commit -m "Launch चोरगे निसर्ग निवास website"
    ```
 2. **Create a GitHub Repository**:
    - Go to [github.com/new](https://github.com/new).
@@ -256,5 +256,5 @@ Replace `#` with your live page URL, for example:
 
 ## License & Copyright
 
-&copy; 2026 Tamhini Valley Retreat. All rights reserved.  
+&copy; 2026 चोरगे निसर्ग निवास. All rights reserved.  
 Location: Nive, Tamhini, Mulshi, Pune, Maharashtra, India.

@@ -1,4 +1,4 @@
-# Image Directory Guide - Tamhini Valley Retreat
+# Image Directory Guide - चोरगे निसर्ग निवास
 
 This directory structure is prepared for your real property photos:
 

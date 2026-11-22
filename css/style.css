@@ -1,11 +1,12 @@
 /* ==========================================================================
-   TAMHINI VALLEY RETREAT - STYLESHEET
+   चोरगे निसर्ग निवास - STYLESHEET
    Style Concept: Modern Sahyadri Nature Retreat
    Palette: Deep Forest Green, Warm Cream, Muted Earthy Gold, Charcoal, White
    ========================================================================== */
 
 /* --- Google Fonts Preconnect & Import --- */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Tiro+Devanagari+Marathi&display=swap');
 
 /* --- CSS Variables & Design Tokens --- */
 :root {
@@ -13,57 +14,59 @@
   --primary: #1b3b2b;
   --primary-light: #2c5942;
   --primary-subtle: #eaf1ed;
-  
+
   --secondary: #fdfbf7;
   --secondary-card: #ffffff;
   --secondary-muted: #f4efe6;
   --secondary-dark: #e8e0d1;
-  
+
   --accent-gold: #c29b38;
   --accent-gold-hover: #aa8428;
   --accent-gold-light: #faf3e1;
   --accent-gold-subtle: rgba(194, 155, 56, 0.15);
-  
+
   --earth-brown: #5c4430;
   --earth-brown-light: #7a5c43;
-  
+
   --text-main: #202623;
   --text-muted: #5e6b64;
   --text-light: #8a9790;
   --text-inverse: #fdfbf7;
-  
+
   --border-color: rgba(27, 59, 43, 0.12);
   --border-light: rgba(0, 0, 0, 0.06);
   --border-gold: rgba(194, 155, 56, 0.35);
-  
+
   --shadow-xs: 0 2px 4px rgba(16, 38, 27, 0.04);
   --shadow-sm: 0 4px 12px rgba(16, 38, 27, 0.06);
   --shadow-md: 0 10px 28px rgba(16, 38, 27, 0.09);
   --shadow-lg: 0 20px 48px rgba(16, 38, 27, 0.14);
   --shadow-gold: 0 6px 20px rgba(194, 155, 56, 0.22);
-  
-  --font-heading: 'Cormorant Garamond', Georgia, serif;
+
+  --font-heading: 'Cormorant Garamond', 'Tiro Devanagari Marathi', Georgia, serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  
+
   --radius-xs: 4px;
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 20px;
   --radius-pill: 9999px;
-  
+
   --header-height: 80px;
   --header-height-scrolled: 68px;
-  
+
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   --transition-slow: 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-  
+
   --container-max: 1240px;
   --container-narrow: 900px;
 }
 
 /* --- Base & Reset --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -99,7 +102,10 @@ a {
   transition: var(--transition-fast);
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -111,7 +117,8 @@ button {
   background: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -122,7 +129,12 @@ ul, ol {
 }
 
 /* --- Typography --- */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 600;
   color: var(--primary-dark);
@@ -503,12 +515,12 @@ p:last-child {
 }
 
 .logo-title {
-  font-family: var(--font-heading);
+  font-family: 'Tiro Devanagari Marathi', var(--font-heading);
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--primary-dark);
-  line-height: 1.1;
-  letter-spacing: 0.01em;
+  line-height: 1.2;
+  letter-spacing: normal;
 }
 
 .logo-tagline {
@@ -722,12 +734,10 @@ p:last-child {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(16, 38, 27, 0.4) 0%,
-    rgba(16, 38, 27, 0.68) 55%,
-    rgba(16, 38, 27, 0.88) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(16, 38, 27, 0.4) 0%,
+      rgba(16, 38, 27, 0.68) 55%,
+      rgba(16, 38, 27, 0.88) 100%);
   z-index: 2;
 }
 
@@ -821,9 +831,20 @@ p:last-child {
 }
 
 @keyframes scrollBob {
-  0% { transform: translate(-50%, 0); opacity: 1; }
-  75% { transform: translate(-50%, 10px); opacity: 0; }
-  100% { transform: translate(-50%, 0); opacity: 0; }
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate(-50%, 10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
 }
 
 /* Page Banner (for inner pages) */
@@ -1523,8 +1544,15 @@ p:last-child {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .result-icon {
@@ -1773,8 +1801,13 @@ p:last-child {
   transition: var(--transition-fast);
 }
 
-.lightbox-prev { left: -65px; }
-.lightbox-next { right: -65px; }
+.lightbox-prev {
+  left: -65px;
+}
+
+.lightbox-next {
+  right: -65px;
+}
 
 .lightbox-prev:hover,
 .lightbox-next:hover {
@@ -2151,10 +2184,21 @@ p:last-child {
 }
 
 /* Stagger delay helpers */
-.delay-1 { transition-delay: 0.1s; }
-.delay-2 { transition-delay: 0.2s; }
-.delay-3 { transition-delay: 0.3s; }
-.delay-4 { transition-delay: 0.4s; }
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
 
 /* Image Fallback Container */
 .img-fallback-wrapper {
@@ -2180,16 +2224,16 @@ p:last-child {
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
   }
-  
+
   .restaurant-showcase {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
-  
+
   .location-card {
     grid-template-columns: 1fr;
   }
-  
+
   .location-info-pane {
     padding: 2.5rem;
   }
@@ -2199,27 +2243,27 @@ p:last-child {
   .nav-list {
     display: none;
   }
-  
+
   .mobile-nav-toggle {
     display: flex;
   }
-  
+
   .header-action .btn {
     display: none;
   }
-  
+
   .booking-form-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .form-group.col-span-2 {
     grid-column: span 2;
   }
-  
+
   .form-group.col-span-4 {
     grid-column: span 2;
   }
-  
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -2230,76 +2274,87 @@ p:last-child {
     --header-height: 70px;
     --header-height-scrolled: 64px;
   }
-  
+
   .section {
     padding: 4rem 0;
   }
-  
+
   .topbar {
-    display: none; /* Hide micro topbar on small screens */
+    display: none;
+    /* Hide micro topbar on small screens */
   }
-  
+
   .mobile-sticky-bar {
     display: block;
   }
-  
+
   body {
-    padding-bottom: 60px; /* Space for mobile sticky action bar */
+    padding-bottom: 60px;
+    /* Space for mobile sticky action bar */
   }
-  
+
   .hero {
     min-height: 90vh;
     padding-top: 4rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     width: 100%;
     gap: 0.85rem;
   }
-  
+
   .hero-buttons .btn {
     width: 100%;
   }
-  
+
   .booking-wrapper {
     padding: 2rem 1.25rem;
   }
-  
+
   .booking-form-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .form-group.col-span-2,
   .form-group.col-span-4 {
     grid-column: span 1;
   }
-  
+
   .rooms-grid,
   .explore-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .dishes-highlight-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .back-to-top {
     bottom: 5rem;
     right: 1.25rem;
   }
-  
-  .lightbox-prev { left: 10px; }
-  .lightbox-next { right: 10px; }
-  .lightbox-close { top: -45px; right: 5px; }
+
+  .lightbox-prev {
+    left: 10px;
+  }
+
+  .lightbox-next {
+    right: 10px;
+  }
+
+  .lightbox-close {
+    top: -45px;
+    right: 5px;
+  }
 }
